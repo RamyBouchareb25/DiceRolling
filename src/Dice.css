@@ -1,0 +1,30 @@
+.Parent {
+    display: flex;
+    height: 11em;
+    width: 50%;
+    justify-content: space-around;
+    align-content: space-around;      
+}
+.dice {
+    font-size: 7em;
+}
+.animate {
+    transform-origin:bottom ;
+    animation: rolling 1s ease-in-out;
+}
+
+@keyframes rolling{
+    from {
+        transform: rotate(0);
+    }
+    33% {
+        transform: rotate(20deg);
+    }
+    66% {
+        transform: rotate(-20deg);
+    }
+    to{
+        transform: rotate(0);
+    }
+
+}
